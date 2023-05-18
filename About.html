@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="UTF-8">
+<title>shop</title>
+<style>
+	#myDIV{
+        display: flex;
+		width: 100%;
+		padding: 20px;
+		background-color: lightblue;
+		margin-top: 10px;
+        overflow: hidden;
+    }
+    #myDIV a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 7px;
+    }
+    #myDIV a:hover{
+        background-color: rgb(46, 43, 216);
+        color: white;
+    }
+    #myDIV a.active {
+        background-color: rgb(46, 43, 216);
+        color: white;
+    }
+    .icon{
+            height: 15px;
+            width: 15px;
+        }
+    .top{
+        background-color: black;
+        text-align: justify;
+        width: 100%;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+    }
+    footer {
+        background-color: #333;
+         color: #fff;
+         padding: 10px;
+         margin: 1px;
+}
+footer a {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+.photos{
+    background-color: #ffffff;
+}
+.photos a img.goods{
+    width: 120px;
+    height: 100%;
+}
+@media screen and (max-width: 600px){
+    .photos a img.goods{
+        display: column;
+    }
+}
+iframe.location{
+    margin-top: 3px;
+}
+.social a{
+    margin: 9px;
+    padding: 10px;
+}
+	</style>
+</head>
+<body>
+    <div class="top">
+    <button onclick="myFunction()"><img class="icon" src="download.png"></button>
+    <p align="center">SHOP</p>
+    </div>
+<div id="myDIV">
+    <a href="index.html">Home</a>
+    <a href="srvice.html">Srvice</a>
+    <a href="Blog.html">Bolg</a>
+    <a class="active" href="#About">About</a>
+</div>
+<p class="About">
+    
+</p>
+<div class="social">
+<a href="https://youtube.com/@soulseed9057"><img src="1674809573259_2.jpg" height="65px" width="70px"></a>
+<a href="https://www.instagram.com/soulseed_foundation/"><img src="1674809338859.jpg" height="70px" width="70px"></a>
+</div>
+<footer>
+    <tt>Copyright © 2023 Professional Template. Its our news site for you. we provide knowledge about our country.</tt><br><br>
+    <a href="#home">Home</a><br>
+      <a href="#disclaimer">Disclaimer</a><br>
+      <a href="#policy"> Policy</a><br>
+  <a href="https://youtube.com/@soulseed9057"><img src="1674809573259_2.jpg" height="20px" width="35px"></a>
+<a href="https://www.instagram.com/soulseed_foundation/"><img src="1674809338859.jpg" height="20px" width="20px"></a>
+  </footer>
+<script>
+	function myFunction(){
+		var x= document.getElementById('myDIV');
+		if(x.style.display === 'none'){
+		   x.style.display = 'block';
+		}else{
+		   x.style.display = 'none';}
+        }
+	</script>
+</body>
+</html>
